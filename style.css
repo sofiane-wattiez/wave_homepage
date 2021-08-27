@@ -1,0 +1,26 @@
+body{
+    margin:0 ;
+    padding: 0;
+}
+/* Partie Vague */
+
+section{
+    width: 100%;
+    min-height: 1400px;
+}
+.wave{
+    position: relative;
+    background: linear-gradient(90deg, #2d01f0 , #b41010);
+}
+/* Le PNG de la wave blanche seras disponible dans la description */
+.wave::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: url(wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
